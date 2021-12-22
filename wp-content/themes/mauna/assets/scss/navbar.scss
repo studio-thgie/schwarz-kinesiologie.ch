@@ -1,0 +1,167 @@
+/**
+ *
+ * Navbar top
+ *
+ */
+.navbar-top { position: relative; z-index: 4; pointer-events: none;
+	@include breakpoint(medium down) { height: 100px; }
+}
+.navbar-fixed { position: fixed; z-index: 100; width: 100%; top: 0; }
+.burger-nav { width: 50px; height: 50px; position: relative; cursor: pointer; pointer-events: auto; 
+	svg { pointer-events: none; position: absolute; height: 100%; width: 100%; left: 0; top: 0; }
+	@include breakpoint(small only) { width: 40px; }
+	.pathA { transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+	.pathC { transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+	&.burger-animation { 
+		.pathA { transform: translateY(10px); opacity: 0; }
+		.pathC { transform: translateY(-10px); opacity: 0; }
+	}
+}
+.logo-lg { margin: 4vw 8vw; pointer-events: auto; }
+.logo-sm h1 { margin-bottom: 0; line-height: 1;  }
+.logo-lg-wrapper h1 { display: table-cell; vertical-align: middle; }
+.navbar-top .site-name { line-height: 1; letter-spacing: 5px; text-transform: uppercase;  }
+
+.navbar-top-dark .site-name { color: #111; }
+.navbar-top-light .site-name { color: #fff; }
+
+.main-navigation { white-space: nowrap; 
+	@include breakpoint(small only) { margin: 0 15px; line-height: 100px; height: 100px;
+		.logo-sm { margin: 0 20px;  @include calc( max-width, '100%');/* padding: 0 5px;  */
+			img { max-width: 90%; padding: 15px 0; max-height: 100px;  }
+		}
+	}
+	@include breakpoint(medium only) { margin: 0 15px; line-height: 100px; height: 100px;
+		.logo-sm { margin: 0 30px; @include calc( max-width, '60% - 60px');
+			img { max-height: 100px; padding: 10px 0; }
+		}
+	}
+	.burger-nav { display: inline-block; vertical-align:  middle; 
+		&.invisible { visibility: hidden; }
+	}
+	.logo-sm { display: inline-block; vertical-align: middle; pointer-events: auto;}
+	@include breakpoint(large) { /* margin: 4vw 8vw;  */ margin: 4vw 60px 4vw 120px;
+		.burger-nav, .logo-sm  { vertical-align: top; }
+		.logo-sm { margin: 0 2vw; }
+	}
+	
+}
+.social-profiles, .nav { 
+	img { display: none; }
+}
+.lang-social-menu img { display: none; }
+
+.navbar-large {
+	.columns { position: relative; }
+	.logo-sm {
+		@include breakpoint(large) { width: calc(100% - 200px); position: absolute; right: 0; top: 0; height: 100%; margin: 0; 
+			img { padding: 20px 0; }
+		}
+		
+	}
+	.logo-lg-wrapper { display: table; height: 100%; 
+		a { display: table-cell; vertical-align: middle; }
+	}
+}
+
+// .blurred { filter: blur(2px); transition: filter 0.25s; }
+
+/**
+ *
+ * Navigation overlay
+ *
+ */
+
+.nav-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 102; opacity: 0; display: none;  }
+.navigation-overlay { opacity: 0; display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 103; overflow-y: auto; 
+	.languages { display: none; }
+	.navigation-content { margin: 0 8vw; position: relative;
+		a { opacity: 1; position: relative;
+			&:before { content: ''; position: absolute; top: 0; left: -5px; @include calc( width, '50% + 10px'); height: 100%; z-index: -1; transform: scaleX(0); transition: transform .4s; transform-origin: left; }
+			&:hover:before { transform: scaleX(1); }
+		}
+		.social-profiles, .languages { text-align: left; 
+			// a { opacity: 1; position: relative; 
+			// 	&:before { content: ''; position: absolute; top: 0; left: -5px; @include calc( width, '50% + 10px'); height: 100%; z-index: -1; transform: scaleX(0); transition: transform .4s; transform-origin: left; }
+			// 	&:hover:before { transform: scaleX(1); }
+			// }
+		}
+		.languages a { padding-right: 5px;
+			&:after { padding-left: 5px; }
+		}
+		.dropdown { position: absolute; top: 0; left: 0; margin: 0; width: 100%; }
+	}
+	.navbar-top { display: block !important; opacity: 1 !important; position: absolute !important; }
+	.nav { margin: 0; 
+		li { list-style-type: none; margin-bottom: 5px; 
+			a { letter-spacing: 2px; display: inline-block; 
+				@include breakpoint(medium only) { letter-spacing: 5px; }
+				@include breakpoint(large) { letter-spacing: 10px; }
+			}
+			.dropdown a { display: none; opacity: 0; }
+		}
+	}
+	// .dropdown a { display: none; opacity: 0; }
+	.overlay-back { opacity: 0.5; }
+}
+
+
+/**
+ *
+ * Home navigation
+ *
+ */
+
+.home-nav { position: fixed; bottom: 100px; left: 0; width: 100%; 
+	.nav { margin: 0; margin-left: 8vw; 
+		li { list-style-type: none; display: inline-block; float: left; margin-left: 3vw; margin-bottom: 2vw;
+			&:first-of-type { margin-left: 0; }
+		}
+		a { display: block; position: relative;
+			&:after { content: ''; position: absolute; top: 0; right: -5px; width: 0; height: 100%; z-index: -1; transition: width .4s; }
+			&:hover:after { @include calc( width, '50% + 10px'); }
+		}
+	}
+}
+.first-el { margin-left: 0 !important; }
+.prev-el { margin-bottom: 0 !important; margin-left: 0 !important; padding-left: 3vw; /* height: 18px; */ }
+
+/**
+ *
+ * Social profiles / Languages
+ *
+ */
+
+.lang-social-menu { margin: 4vw 120px 0 0; position: relative; z-index: 3; pointer-events: auto;
+	a { color: inherit; }
+
+}
+.languages { margin-bottom: 1.5vw; }
+.languages ul { list-style: none; margin: 0; padding: 0; }
+.lang-social-menu a { color: inherit;}
+.lang-social-menu li:after { color: inherit;}
+.languages li { list-style: none; margin: 0; padding: 0; display: inline-block; }
+.languages li { letter-spacing: 2px; font-size: 12px; font-weight: bold; padding-right: 15px; position: relative; opacity: 0.5; transition: opacity .4s; 
+	@include breakpoint(medium only) { letter-spacing: 5px; }
+	@include breakpoint(large) { letter-spacing: 10px; }
+	&:after { content: "/"; padding-left: 10px; display: inline-block; width: 16px; }
+	&:last-of-type { padding-right: 0; 
+		&:after { display: none; }
+	} 
+	&:hover { opacity: 1; }
+}
+.languages, .social-profiles { text-align: right; }
+.social-profiles { margin: 0; 
+	li { list-style-type: none; line-height: 1.4em; /* margin-bottom: 5px; */ }
+	a { letter-spacing: 2px; font-size: 12px; font-weight: bold; position: relative; display: inline-block; color: inherit;
+		@include breakpoint(medium only) { letter-spacing: 5px; }
+		@include breakpoint(large) { letter-spacing: 10px; }
+		&:after { content: ''; position: absolute; top: 0; right: 0px; @include calc( width, '50% + 10px'); bottom: 0; z-index: -1; transform: scaleX(0); transition: transform .4s; transform-origin: right;  }
+		&:hover:after { transform: scaleX(1); }
+	}
+}
+
+span.overlay-children-icon {
+    position: absolute;
+    left: -30px;
+}

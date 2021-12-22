@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="663" viewBox="0 0 1024 663">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #434343;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="539.5" cy="112.5" r="7.5"/>
+  <circle class="cls-1" cx="446.5" cy="263.5" r="7.5"/>
+  <circle class="cls-1" cx="565.5" cy="276.5" r="7.5"/>
+  <circle class="cls-1" cx="593.5" cy="385.5" r="7.5"/>
+  <circle class="cls-1" cx="487.5" cy="427.5" r="7.5"/>
+  <circle class="cls-1" cx="247.5" cy="443.5" r="7.5"/>
+  <circle class="cls-1" cx="159.5" cy="157.5" r="7.5"/>
+  <circle class="cls-1" cx="165.5" cy="509.5" r="7.5"/>
+  <circle class="cls-1" cx="940.5" cy="443.5" r="7.5"/>
+  <circle class="cls-1" cx="916.5" cy="269.5" r="7.5"/>
+  <circle class="cls-1" cx="673.5" cy="316.5" r="7.5"/>
+  <circle class="cls-1" cx="681.5" cy="156.5" r="7.5"/>
+</svg>
