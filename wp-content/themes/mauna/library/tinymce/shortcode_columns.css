@@ -1,0 +1,4 @@
+body#tinymce.wp-editor .mauna-columns { border: 1px dashed #ddd; display: inline-block; margin: 2px; height: auto; vertical-align: top;}
+body#tinymce.wp-editor .large-6 { width: 49%; }
+body#tinymce.wp-editor .large-4 { width: 32%; }
+body#tinymce.wp-editor .large-3 { width: 24%; }

@@ -1,0 +1,139 @@
+/**
+ *
+ * Mauna Stylesheet
+ * by Puruno
+ * https://themeforest.net/user/puruno
+ * 
+ * please do not edit directly in theme, for any adjustments we recomend using child theme
+ * https://codex.wordpress.org/Child_Themes
+ *
+ *  *
+ * 1. 	Foundation base styles
+ * 2. 	Global elements
+ * 3. 	Swiper slider styles
+ * 4. 	Swipebox slider styles
+ * 5. 	Fullpage slider styles
+ * 6. 	Navbar styles
+ * 7. 	Default template styles
+ * 8. 	Home templates styles
+ * 9. 	Blog template styles
+ * 10.	News / annoucemenets template styles
+ * 11.	Portfolio templates styles
+ * 12.	About template styles
+ * 13.	Wordpress custom styles
+ * 14.	Vegas slider styles
+ * 15.	Woocommerce
+ */
+
+/**
+ *
+ * 1. Foundation base styles
+ *
+ */
+@import "global/settings"; // Foundation settings file.
+@import '../components/foundation-sites/scss/foundation';
+
+@import "global/wp-admin"; // Fix issues with wp-admin bar positioning
+@import "global/wp-overrides"; // Override the default WordPress styling for some elements
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-close-button;
+@include foundation-menu-icon;
+@include foundation-dropdown;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-table;
+@include foundation-thumbnail;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+
+/**
+ *
+ * 2. Global elements
+ *
+ */
+@import 'elements.scss';
+/**
+ *
+ * 3. Swiper slider styles
+ *
+ */
+@import 'swiper.scss';
+/**
+ *
+ * 4. Swipebox slider styles
+ *
+ */
+@import 'swipebox.scss';
+/**
+ *
+ * 5. Fullpage slider styles
+ *
+ */
+@import 'fullPage.scss';
+/**
+ *
+ * 6. Navbar styles
+ *
+ */
+@import 'navbar.scss';
+/**
+ *
+ * 7. Default template styles
+ *
+ */
+@import 'default.scss';
+/**
+ *
+ * 8. Home templates styles
+ *
+ */
+@import 'home.scss';
+/**
+ *
+ * 9. Blog template styles
+ *
+ */
+@import 'blog.scss';
+/**
+ *
+ * 10. News / annoucemenets template styles
+ *
+ */
+@import 'news.scss';
+/**
+ *
+ * 11. Portfolio templates styles
+ *
+ */
+@import 'portfolio.scss';
+/**
+ *
+ * 12. About template styles
+ *
+ */
+@import 'about.scss';
+/**
+ *
+ * 13. Wordpress custom styles
+ *
+ */
+@import 'wp.scss';
+/**
+ *
+ * 14. Vegas slider styles
+ *
+ */
+@import 'vegas.sass';
+
+/**
+ *
+ * 15. Woocommerce
+ *
+ */
+@import 'woocommerce.scss';

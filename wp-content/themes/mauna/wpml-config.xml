@@ -1,0 +1,15 @@
+<wpml-config>
+<admin-texts>
+<key name="mauna_redux">
+<key name="mauna_off_canvas_text" />
+<key name="mauna_off_canvas_open" />
+<key name="mauna_off_canvas_close" />
+<key name="mauna_about_open" />
+<key name="mauna_about_close" />
+<key name="mauna_footer_text" />
+<key name="mauna_footer2_text" />
+<key name="mauna_blog_footer_text" />
+
+</key>
+</admin-texts>
+</wpml-config>

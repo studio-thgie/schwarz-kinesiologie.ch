@@ -1,0 +1,259 @@
+.blog-content { 
+	header h5 { text-transform: uppercase; direction: ltr; margin-bottom: 4vw;
+		a { position: relative; background-repeat: no-repeat; background-size: 0% 100%; padding-bottom: 0px; transition: background .5s !important;
+			&:hover { background-size: 50% 100%; }
+		}
+	}
+	.post-image { text-align: center;
+		figure { margin: 0; position: relative; display: inline-block; max-width: 100%; 
+			> a { display: block; position: relative; overflow: hidden;
+				&:before, &:after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+				&:before { transition: transform .8s 0s cubic-bezier(0.4, 0, 0.2, 1); transform: translateX(-100%); opacity: .3; /* opacity: .3; background: #000; */ }
+				&:after { transition: transform .4s .4s cubic-bezier(0.25, 0.46, 0.45, 0.94); transform: translateX(-100%); opacity: .5; /* opacity: .5; background: #000; */ }
+				&:hover {
+					&:before { transition: transform .8s cubic-bezier(0.4, 0, 0.2, 1); transform: translateX(100%)}
+					&:after { transition: transform .4s .2s cubic-bezier(0.25, 0.46, 0.45, 0.94); transform: translateX(0%) }
+				}
+				// &:before { content: ""; position: absolute; top: 0; left: 0; width: 650px; height: 100%; opacity: 0; background: #111; transform: rotate(20deg) translateY(-50%); transform-origin: top; transition: transform .6s cubic-bezier(0.4, 0, 0.2, 1), opacity .2s .2s cubic-bezier(0.4, 0, 0.2, 1); }
+				// &:after { content: ""; position: absolute; bottom: 0; right: 0; width: 650px; height: 100%; opacity: 0; background: #111; transform: rotate(-20deg) translateY(50%); transform-origin: top; transition: transform .6s .1s cubic-bezier(0.4, 0, 0.2, 1), opacity .2s .2s cubic-bezier(0.4, 0, 0.2, 1); }
+				// &:hover { 
+				// 	&:before, &:after { opacity: .3; transform: rotate(0) translateY(0); }
+				// 	&:before { transition: transform .6s .1s cubic-bezier(0.4, 0, 0.2, 1), opacity .2s 0s cubic-bezier(0.4, 0, 0.2, 1); }
+				// 	&:after { transition: transform .6s .0s cubic-bezier(0.4, 0, 0.2, 1), opacity .2s 0s cubic-bezier(0.4, 0, 0.2, 1); }
+				// }
+			}
+		}
+	}
+	.post-meta { font-size: 14px;
+		.post-category { margin: 0; display: inline-block;
+			li { list-style-type: none; display: inline-block; margin-left: 5px;
+				&:first-of-type { margin-left: 0; }
+				a { display: inline-block; }
+			}
+			&.post-cat-separator li { 
+				&:last-of-type:after { content: "|"; right: 0; padding: 0 2px 0 5px; }
+			}
+		}
+		.post-date { display: inline-block; }
+	}
+
+	.more-link { text-align: right; font-style: italic !important; display: block; line-height: inherit; font-weight: bold !important; float: right; 
+		span { padding: 2px; }
+		span:after { content: ""; width: 40px; height: 2px; display: inline-block; vertical-align: middle; border-radius: 4px; margin-left: 5px; }
+	}
+	@include breakpoint(small only) { 
+		header h5 { letter-spacing: 5px; }
+		.post-meta { margin: 15px 0; text-align: center; }
+	}
+	@include breakpoint(medium only) { 
+		header h5 { letter-spacing: 5px; }
+		.post-meta { margin: 20px 0; text-align: center; }
+	}
+	@include breakpoint(large) { margin-bottom: 10vw;
+
+		&.post-with-img { display: table; width: 100%; table-layout: fixed;
+			.post-content { display: table-cell; width: 50%; vertical-align: top; padding: 4vw 4vw 0; text-align: left; } 
+			.post-image { display: table-cell; width: 50%; text-align: right; }
+			.post-meta { transform: translateX(0) translateY(100%) rotateZ(90deg); position: absolute; top: 0; left: -30px; transform-origin: left; }
+			.post-share { text-align: center; }
+			.shares { display: block !important; transform: translateY(0); }
+		} 
+		&.post-without-img { position: relative;
+			.header-without-img { margin-bottom: 2vw; }
+			.post-meta { text-align: center; }
+			.post-share { text-align: right;
+				.share-header { margin-bottom: 0 !important; }
+			}
+			.shares { margin-left: 10px; text-align: right; display: block !important;
+				li { display: inline-block; margin-left: 10px; }
+			}
+		}
+		
+		header h5 { letter-spacing: 5px; }
+		
+	}
+	.content { direction: ltr; overflow: hidden; }
+}
+.post-columns { opacity: 0; transition: opacity 0.4s; 
+	@include breakpoint(large) {
+		&:nth-child(2n-1) .blog-content { direction: rtl; 
+			&.post-with-img .post-meta { left: auto; right: -30px; transform: translateX(100%) translateY(0) rotateZ(90deg); direction: ltr; transform-origin: left; }
+			&.post-without-img .post-meta { direction: ltr; }
+			.post-image { text-align: left; direction: ltr; }
+			// .post-content { text-align: left; }
+			.more-link { direction: ltr; }
+		}
+	}
+	&.post-visible { opacity: 1; }
+	
+}
+.blog-load-more-wrapper { text-align: center; 
+	.blog-load-more { display: inline-block; color: inherit; }
+}
+
+.blog-footer .footer-content { text-align: center; font-size: 12px; line-height: 1.5em; }
+
+/**
+ *
+ * Single post
+ *
+ */
+.single-post {
+	.post-content .content {
+		p:last-of-type { margin-bottom: 0; }
+	}
+	@include breakpoint(large) {
+		.post-with-img:nth-child(2n-1) { direction: rtl; 
+			.post-meta { left: auto; right: -30px; transform: translateX(100%) translateY(0) rotateZ(90deg); direction: ltr; transform-origin: left; }
+			.post-image { text-align: left; direction: ltr; }
+			// .post-content { text-align: left; }
+			.more-link { direction: ltr; }
+		}
+	}
+}
+.post-share { direction: ltr;
+	@include breakpoint(small only) {
+		.share-header, .shares li a { font-size: 12px; }
+	}
+	@include breakpoint(medium only) {
+		.share-header, .shares li a { font-size: 14px; }
+	}
+	@include breakpoint(large only) {
+		.share-header, .shares li a { font-size: 1.3vw; }
+	}
+	@include breakpoint(xlarge only) {
+		.share-header, .shares li a { font-size: 1.2vw; }
+	}
+	@include breakpoint(xxlarge) {
+		.share-header, .shares li a { font-size: 1.1vw; }
+	}
+
+	@include breakpoint(medium down) { margin-bottom: 8vw; text-align: right;
+		.shares li { display: inline-block; margin-right: 5px; }
+		.shares { display: none; text-align: right; }
+	}
+	.share-header { text-transform: uppercase !important; letter-spacing: 2px !important; /* font-weight: lighter; */
+		@include breakpoint(large) { margin-bottom: 2vw !important; }
+	}
+	.shares { margin: 0; 
+		li { list-style-type: none; font-size: 14px; }
+		a { display: inline-block; position: relative; z-index: 1;
+			&:before { content: ""; position: absolute; top: 4px; bottom: 4px; height: auto; width: 0; transition: width .4s; z-index: -1}
+			&:hover { 
+				&:before { width: 50%; }
+			}
+		}
+	}
+}
+.post-tags { direction: ltr;
+	span { text-transform: uppercase; letter-spacing: 2px; }
+	@include breakpoint(small only) {
+		span, a { font-size: 12px; }
+	}
+	@include breakpoint(medium only) {
+		span, a { font-size: 14px; }
+	}
+	@include breakpoint(large only) {
+		span, a { font-size: 1.3vw; }
+	}
+	@include breakpoint(xlarge only) {
+		span, a { font-size: 1.2vw; }
+	}
+	@include breakpoint(xxlarge) {
+		span, a { font-size: 1.1vw; }
+	}
+	a { position: relative; display: inline-block; position: relative; z-index: 1;
+		&:after { content: ''; position: absolute; top: 0; right: -2px; width: 0; height: 100%; z-index: -1; transition: width .4s; }
+		&:hover:after { @include calc( width, '50% + 10px'); }
+	}
+}
+
+.related-posts { position: relative;
+	.post-image {  text-align: center;
+		@include breakpoint(large) { text-align: right; }
+	}
+	.decoration { position: relative; margin-left: -150px; margin-top: 0; top: 0; text-align: left; visibility: visible; 
+		@include breakpoint(medium down) { margin: 0 auto; left: 0; 
+			svg { margin: 0 auto; }
+		}
+		@include breakpoint(large) {
+			&.circle_right, &.circle_left { margin-left: 0; left: 0; }
+			&.circle_right { overflow: hidden;
+				svg {float: right; }
+			}
+		}
+	}
+
+	@include breakpoint(medium down) { 
+		.post-content { margin-top: 30px; }
+	}
+}
+
+// Post comments
+.post-comments { text-align: left; 
+	h6 { text-transform: uppercase; letter-spacing: 2px; text-align: center !important; }
+}
+#recentcomments { margin: 0; 
+	ul { margin-left: 30px; }
+	li { list-style-type: none; /* display: table; */ }
+	// .comment-date, .comment-author-link { display: table-cell; padding-right: 10px; white-space: nowrap }
+	// .comment-header, .comment-body { display: table-cell; }
+	.comment-date, .comment-author-link, .comment-header, .comment-body { display: inline-block; position: relative; }
+	.comment-date { opacity: .4; /* font-style: italic; */ font-size: 12px; margin-right: 10px; }
+	.comment-author-link { font-weight: bold; letter-spacing: 1px; font-size: 14px; 
+		a { color: inherit; font-weight: bold;  }
+		// &:after { content: ":"; }
+	}
+	.comment-body { font-size: 14px; display: block; margin-bottom: 30px;
+		// p { margin-bottom: 0; }
+	}
+	.comment-author-avatar {
+	    position: absolute;
+	    left: -30px;
+	    top: -1px;
+	}
+	.comment-header { margin-bottom: 1rem; }
+	.reply { font-size: 14px; opacity: 0.5;}
+	@include breakpoint(medium down) {
+		ul { margin-left: 15px; }
+		.comment-date { width: 100%; }
+	}
+}
+.numeric-pagination { text-align: center; width: 100%; /* font-family: $subheader-font-family; font-style: italic;  */font-size: 20px; margin-bottom: 45px;
+	.page-numbers { width: 25px; text-align: center; opacity: 0.6; transition: opacity .4s; display: inline-block; vertical-align: middle; line-height: 20px; height: 25px; position: relative;
+		&.current { opacity: 1; /* transform: scale(1.4); */ 
+			&:after { content: ""; position: absolute; bottom: 0; left: 5px; right: 5px; height: 1px; }
+		}
+	}
+	a.page-numbers {
+		&:hover { opacity: 1; /* color: #FF528A; */ }
+	}
+}
+
+#commentform { 
+	input { height: 50px; }
+	.comment-form-input { padding: 15px 30px; background: transparent;  }
+	.comment-submit { text-align: right; display: block; 
+		span { display: inline-block; }
+		.form-submit { background: transparent; border: none; outline: none; 
+			&:focus { outline: none; }
+		}
+	}
+	.comment-logged-in { text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; 
+		a { color: inherit; font-weight: bold; }
+	}
+}
+
+/**
+ *
+ * Archive
+ *
+ */
+.archive-header { text-align: center;
+	h3 { text-transform: uppercase; letter-spacing: 15px;
+		@include breakpoint(medium only) { letter-spacing: 15px; }
+		@include breakpoint(large) { letter-spacing: 15px; }
+	}
+}
+
+.post-pagination { margin-top: 2vw; }

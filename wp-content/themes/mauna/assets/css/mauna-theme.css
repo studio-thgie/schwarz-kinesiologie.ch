@@ -1,0 +1,1091 @@
+/**
+ *
+ * Mauna Default Styles
+ * by Puruno
+ * https://themeforest.net/user/puruno
+ * 
+ * This file is used only with themes without Mauna Theme Plugin
+ * 
+ *
+ * 1. 	Page mask
+ * 2. 	Navbar
+ * 3. 	Home template
+ * 4. 	Offcanvas
+ * 5. 	Home 2 template
+ * 6. 	Default template
+ * 7. 	Default 2 template 
+ * 8. 	Blog template and archive
+ * 9. 	About template
+ * 10.	Portfolio templates
+ * 11.	News / annoucemenets template styles
+ */
+
+
+/**
+ *
+ * 1. Page mask
+ *
+ */
+
+.page-mask {
+    background-color: #111;
+}
+
+/**
+ *
+ * 2. Navbar
+ *
+ */
+
+
+.navbar-small-light .burger-nav svg,
+.navbar-large-light .burger-nav svg {
+    stroke: rgba(255, 255, 255, 1);
+}
+.navbar-large-light .lang-social-menu li,
+.navbar-small-light .lang-social-menu li {
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-small-dark .burger-nav svg,
+.navbar-large-dark .burger-nav svg {
+    stroke: #111;
+}
+.navbar-large-dark .lang-social-menu li,
+.navbar-small-dark .lang-social-menu li {
+    color: #111;
+}
+.nav-overlay {
+    background: rgba(17, 17, 17, .9);
+}
+.navigation-overlay .navigation-content,
+.navigation-overlay .navigation-content a {
+    color: #fff;
+}
+.navigation-overlay .burger-nav svg {
+    stroke: #fff;
+}
+.navigation-overlay .navigation-content a:before {
+    background-color: #55DAA5;
+}
+.lang-social-menu .social-profiles a:after {
+    background-color: #55DAA5;
+}
+.navigation-overlay .navigation-content a {
+    font-family: Lato;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .navigation-overlay .navigation-content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .navigation-overlay .navigation-content a,
+{
+    visibility: hidden;
+}
+.page-wrapper section > .navbar-top a:not(.site-name) {
+    font-family: Lato;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .page-wrapper section > .navbar-top a:not(.site-name),
+{
+    opacity: 0;
+}
+.ie.wf-loading .page-wrapper section > .navbar-top a:not(.site-name),
+{
+    visibility: hidden;
+}
+
+
+
+
+/**
+ *
+ * 3. Home template
+ *
+ */
+
+
+
+.home-header header h1 {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .home-header header h1,
+{
+    opacity: 0;
+}
+.ie.wf-loading .home-header header h1,
+{
+    visibility: hidden;
+}
+.home-nav,
+.home-nav a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+}
+.wf-loading .home-nav,
+.home-nav a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .home-nav,
+.home-nav a,
+{
+    visibility: hidden;
+}
+.home-footer,
+.home-footer a {
+    font-family: Lato;
+    text-align: left;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .home-footer,
+.home-footer a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .home-footer,
+.home-footer a,
+{
+    visibility: hidden;
+}
+.homepage header h1,
+.open-off-canvas a,
+.home-footer .footer-content,
+.home-footer .footer-content a,
+.home-nav .nav a {
+    color: #fff;
+}
+.open-off-canvas a:after {
+    background-color: #fff;
+}
+.open-off-canvas a.link-hover:before,
+.home-nav .nav a:after {
+    background: #55DAA5;
+}
+.homepage .decoration svg {
+    stroke: #55DAA5;
+}
+.vegas-timer-progress {
+    background: #fff;
+}
+.home-video-controls svg .circle-dark,
+.home-mobile-video-control svg .circle-dark {
+    fill: rgba(0, 0, 0, .4);
+}
+.home-video-controls svg .circle-light,
+.home-mobile-video-control svg .circle-light {
+    stroke: #fff;
+}
+.home-video-controls svg polygon,
+.home-mobile-video-control svg polygon {
+    fill: #fff;
+}
+
+/**
+ *
+ * 4. Offcanvas
+ *
+ */
+
+
+.off-canvas-content .content h1,
+.off-canvas-content .content h2,
+.off-canvas-content .content h3,
+.off-canvas-content .content h4,
+.off-canvas-content .content h5,
+.off-canvas-content .content h6 {
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .off-canvas-content .content h1,
+.off-canvas-content .content h2,
+.off-canvas-content .content h3,
+.off-canvas-content .content h4,
+.off-canvas-content .content h5,
+.off-canvas-content .content h6,
+{
+    opacity: 0;
+}
+.ie.wf-loading .off-canvas-content .content h1,
+.off-canvas-content .content h2,
+.off-canvas-content .content h3,
+.off-canvas-content .content h4,
+.off-canvas-content .content h5,
+.off-canvas-content .content h6,
+{
+    visibility: hidden;
+}
+.off-canvas-content .content p,
+.off-canvas-content .content a {
+    font-family: "Playfair Display";
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+}
+.wf-loading .off-canvas-content .content p,
+.off-canvas-content .content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .off-canvas-content .content p,
+.off-canvas-content .content a,
+{
+    visibility: hidden;
+}
+.open-off-canvas a,
+.close-off-canvas a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .open-off-canvas a,
+.close-off-canvas a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .open-off-canvas a,
+.close-off-canvas a,
+{
+    visibility: hidden;
+}
+.off-canvas-overlay {
+    background-color: #111;
+}
+.off-canvas-content,
+.off-canvas-content a,
+.close-off-canvas a {
+    color: #fff;
+}
+.close-off-canvas a.link-hover:before {
+    background-color: #55DAA5;
+}
+.homepage2 .home-nav-items .home-nav-item span {
+    font-family: "Playfair Display";
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+}
+.wf-loading .homepage2 .home-nav-items .home-nav-item span,
+{
+    opacity: 0;
+}
+.ie.wf-loading .homepage2 .home-nav-items .home-nav-item span,
+{
+    visibility: hidden;
+}
+
+/**
+ *
+ * 5. Home 2 template
+ *
+ */
+
+
+.home2-footer,
+.home2-footer a {
+    font-family: Lato;
+    text-align: left;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .home2-footer,
+.home2-footer a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .home2-footer,
+.home2-footer a,
+{
+    visibility: hidden;
+}
+.homepage2 {
+    background-color: #111;
+}
+.homepage2 .home-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+.homepage2 .home-nav-items .home-nav-item span,
+.home2-footer .footer-content p,
+.home2-footer .footer-content a {
+    color: #fff;
+}
+.homepage2 .home-nav-items .home-nav-item {
+    border-color: rgba(255, 255, 255, .1);
+}
+.homepage2 .home-nav-items .home-nav-item a:before {
+    background-color: #111;
+}
+
+/**
+ *
+ * 6. Default template
+ *
+ */
+
+
+.default-header header h3 {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-header header h3,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-header header h3,
+{
+    visibility: hidden;
+}
+.default-content .content h1,
+.default-content .content h2,
+.default-content .content h3,
+.default-content .content h4,
+.default-content .content h5,
+.default-content .content h6 {
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-content .content h1,
+.default-content .content h2,
+.default-content .content h3,
+.default-content .content h4,
+.default-content .content h5,
+.default-content .content h6,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-content .content h1,
+.default-content .content h2,
+.default-content .content h3,
+.default-content .content h4,
+.default-content .content h5,
+.default-content .content h6,
+{
+    visibility: hidden;
+}
+.default-content .content p,
+.default-content .content a {
+    font-family: Lato;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-content .content p,
+.default-content .content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-content .content p,
+.default-content .content a,
+{
+    visibility: hidden;
+}
+.default-header .menu-default .menu-item a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-header .menu-default .menu-item a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-header .menu-default .menu-item a,
+{
+    visibility: hidden;
+}
+.default-template .section-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+.default-template .header-wrapper,
+.default-template .header-wrapper a {
+    color: #fff;
+}
+.default-template .decoration svg {
+    stroke: #55DAA5;
+}
+.default-content-wrapper {
+    background-color: rgba(0, 0, 0, .5);
+}
+.default-content,
+.default-content a {
+    color: #fff;
+}
+.default-header-2 header h3 {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-header-2 header h3,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-header-2 header h3,
+{
+    visibility: hidden;
+}
+
+/**
+ *
+ * 7. Default 2 template
+ *
+ */
+
+
+.default-content-2 .content h1,
+.default-content-2 .content h2,
+.default-content-2 .content h3,
+.default-content-2 .content h4,
+.default-content-2 .content h5,
+.default-content-2 .content h6 {
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-content-2 .content h1,
+.default-content-2 .content h2,
+.default-content-2 .content h3,
+.default-content-2 .content h4,
+.default-content-2 .content h5,
+.default-content-2 .content h6,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-content-2 .content h1,
+.default-content-2 .content h2,
+.default-content-2 .content h3,
+.default-content-2 .content h4,
+.default-content-2 .content h5,
+.default-content-2 .content h6,
+{
+    visibility: hidden;
+}
+.default-content-2 .content p,
+.default-content-2 .content a {
+    font-family: Lato;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-content-2 .content p,
+.default-content-2 .content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-content-2 .content p,
+.default-content-2 .content a,
+{
+    visibility: hidden;
+}
+.default-header-2 .menu-default .menu-item a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .default-header-2 .menu-default .menu-item a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .default-header-2 .menu-default .menu-item a,
+{
+    visibility: hidden;
+}
+.default-template2 .half-overlay,
+.default-template2 .bg-img:after {
+    background-color: rgba(0, 0, 0, .5);
+}
+.default-template2 .bg-content,
+.default-template2 .bg-content-overlay {
+    background-color: #fff;
+}
+.default-content-2,
+.default-content-2 a {
+    color: #111;
+}
+
+/**
+ *
+ * 8. Blog template and archive
+ *
+ */
+
+
+.blog-content .post-content header h5,
+.archive-header h3,
+.blog-content .post-content header h5 a {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .blog-content .post-content header h5,
+.archive-header h3,
+.blog-content .post-content header h5 a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .blog-content .post-content header h5,
+.archive-header h3,
+.blog-content .post-content header h5 a,
+{
+    visibility: hidden;
+}
+.blog-content .post-content .content,
+.blog-content .post-content a,
+.blog-content .post-content .more-link,
+.blog-content .post-meta a,
+.blog-content .post-date,
+.post-comments .comment-date,
+.post-comments .comment-logged-in,
+.blog-content .share-header,
+.blog-content .shares a {
+    font-family: Lato;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .blog-content .post-content .content,
+.blog-content .post-content a,
+.blog-content .post-content .more-link,
+.blog-content .post-meta a,
+.blog-content .post-date,
+.post-comments .comment-date,
+.post-comments .comment-logged-in,
+.blog-content .share-header,
+.blog-content .shares a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .blog-content .post-content .content,
+.blog-content .post-content a,
+.blog-content .post-content .more-link,
+.blog-content .post-meta a,
+.blog-content .post-date,
+.post-comments .comment-date,
+.post-comments .comment-logged-in,
+.blog-content .share-header,
+.blog-content .shares a,
+{
+    visibility: hidden;
+}
+.blog-content .post-meta a,
+.blog-content .post-date {
+    font-family: Lato;
+    text-transform: none;
+    font-weight: 400;
+    font-style: italic;
+}
+.wf-loading .blog-content .post-meta a,
+.blog-content .post-date,
+{
+    opacity: 0;
+}
+.ie.wf-loading .blog-content .post-meta a,
+.blog-content .post-date,
+{
+    visibility: hidden;
+}
+.blog-footer .footer-content a,
+.blog-footer .footer-content {
+    font-family: Lato;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .blog-footer .footer-content a,
+.blog-footer .footer-content,
+{
+    opacity: 0;
+}
+.ie.wf-loading .blog-footer .footer-content a,
+.blog-footer .footer-content,
+{
+    visibility: hidden;
+}
+.post-comments .comment-author-link a,
+.post-comments .comment-author-link,
+.post-comments .comment p,
+.post-comments .comment a,
+.post-comments #respond h6,
+.post-comments .comment-submit .btn,
+.post-comments .comment-form-input,
+.post-comments .numeric-pagination,
+.post-comments .numeric-pagination a {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .post-comments .comment-author-link a,
+.post-comments .comment-author-link,
+.post-comments .comment p,
+.post-comments .comment a,
+.post-comments #respond h6,
+.post-comments .comment-submit .btn,
+.post-comments .comment-form-input,
+.post-comments .numeric-pagination,
+.post-comments .numeric-pagination a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .post-comments .comment-author-link a,
+.post-comments .comment-author-link,
+.post-comments .comment p,
+.post-comments .comment a,
+.post-comments #respond h6,
+.post-comments .comment-submit .btn,
+.post-comments .comment-form-input,
+.post-comments .numeric-pagination,
+.post-comments .numeric-pagination a,
+{
+    visibility: hidden;
+}
+.blog,
+.blog-footer {
+    background-color: #fff;
+}
+.blog,
+.blog-footer .footer-content,
+.blog-footer .footer-content a,
+.blog a {
+    color: #111;
+}
+.blog-content .more-link span:after,
+.post-comments .numeric-pagination .current:after {
+    background-color: #111;
+}
+.blog .post-tags a:after,
+.blog .link-hover:before {
+    background: #55DAA5;
+}
+.blog .decoration svg {
+    stroke: #55DAA5;
+}
+.blog-content .post-image figure >a:before,
+.blog-content .post-image figure >a:after,
+#single-post .gallery-item a:before,
+#single-post .gallery-item a:after {
+    background: #000;
+}
+.about-content-wrapper header h3 {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .about-content-wrapper header h3,
+{
+    opacity: 0;
+}
+.ie.wf-loading .about-content-wrapper header h3,
+{
+    visibility: hidden;
+}
+
+/**
+ *
+ * 9. About template
+ *
+ */
+
+
+.about-content,
+.about-content a {
+    font-family: Lato;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .about-content,
+.about-content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .about-content,
+.about-content a,
+{
+    visibility: hidden;
+}
+.about-sections .close-content-section a,
+.about-sections .open-content-section a,
+#fp-nav li:before {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: normal;
+}
+.wf-loading .about-sections .close-content-section a,
+.about-sections .open-content-section a,
+#fp-nav li:before,
+{
+    opacity: 0;
+}
+.ie.wf-loading .about-sections .close-content-section a,
+.about-sections .open-content-section a,
+#fp-nav li:before,
+{
+    visibility: hidden;
+}
+
+
+/**
+ *
+ * 10. Portfolio templates
+ *
+ */
+
+
+.portfolio .portfolio-filters .img-caption {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: italic;
+}
+.wf-loading .portfolio .portfolio-filters .img-caption,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio .portfolio-filters .img-caption,
+{
+    visibility: hidden;
+}
+.portfolio .portfolio-filters ul a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .portfolio .portfolio-filters ul a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio .portfolio-filters ul a,
+{
+    visibility: hidden;
+}
+.portfolio {
+    background-color: #111;
+}
+.portfolio .portfolio-arrow {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.portfolio .portfolio-arrow svg {
+    stroke: #fff;
+}
+.portfolio .swiper-pagination .swiper-pagination-progressbar {
+    background-color: #fff;
+}
+.portfolio .portfolio-filters {
+    background-color: #111;
+}
+.portfolio .portfolio-filters,
+.portfolio .portfolio-filters a {
+    color: #fff;
+}
+.portfolio2 .portfolio2-filters .img-caption {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: italic;
+}
+.wf-loading .portfolio2 .portfolio2-filters .img-caption,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio2 .portfolio2-filters .img-caption,
+{
+    visibility: hidden;
+}
+.portfolio2 .portfolio2-filters ul a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .portfolio2 .portfolio2-filters ul a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio2 .portfolio2-filters ul a,
+{
+    visibility: hidden;
+}
+.portfolio2 {
+    background-color: #111;
+}
+.portfolio2 .portfolio-arrow {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.portfolio2 .portfolio-arrow svg {
+    stroke: #fff;
+}
+.portfolio2 .swiper-pagination .swiper-pagination-progressbar {
+    background-color: #fff;
+}
+.portfolio2 .portfolio2-filters {
+    background-color: #111;
+}
+.portfolio2 .portfolio2-filters,
+.portfolio2 .portfolio2-filters a {
+    color: #fff;
+}
+.portfolio3 .portfolio-load-more-wrapper a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-style: normal;
+}
+.wf-loading .portfolio3 .portfolio-load-more-wrapper a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio3 .portfolio-load-more-wrapper a,
+{
+    visibility: hidden;
+}
+.portfolio3 .portfolio3-filters ul a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .portfolio3 .portfolio3-filters ul a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio3 .portfolio3-filters ul a,
+{
+    visibility: hidden;
+}
+.portfolio3,
+.portfolio3 .page-bg {
+    background-color: #111;
+}
+.portfolio3 .portfolio-load-more-wrapper a {
+    color: #fff;
+}
+.portfolio3 .portfolio3-filters {
+    background-color: #111;
+}
+.portfolio3 .portfolio3-filters,
+.portfolio3 .portfolio3-filters a {
+    color: #fff;
+}
+.portfolio3 .link-hover:before {
+    background-color: #55DAA5;
+}
+.portfolio4 .portfolio-load-more-wrapper a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-style: normal;
+}
+.wf-loading .portfolio4 .portfolio-load-more-wrapper a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio4 .portfolio-load-more-wrapper a,
+{
+    visibility: hidden;
+}
+.portfolio4 .portfolio4-filters ul a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .portfolio4 .portfolio4-filters ul a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .portfolio4 .portfolio4-filters ul a,
+{
+    visibility: hidden;
+}
+.portfolio4,
+.portfolio4 .page-bg {
+    background-color: #111;
+}
+.portfolio4 .portfolio-load-more-wrapper a {
+    color: #fff;
+}
+.portfolio4 .portfolio4-filters {
+    background-color: #111;
+}
+.portfolio4 .portfolio4-filters,
+.portfolio4 .portfolio4-filters a {
+    color: #fff;
+}
+.portfolio4 .link-hover:before {
+    background-color: #55DAA5;
+}
+.promotion-news-header header h3 {
+    font-family: "Playfair Display";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .promotion-news-header header h3,
+{
+    opacity: 0;
+}
+.ie.wf-loading .promotion-news-header header h3,
+{
+    visibility: hidden;
+}
+
+
+/**
+ *
+ * 11. News / annoucemenets template styles
+ *
+ */
+
+
+.promotion-news-content h1,
+.promotion-news-content h2,
+.promotion-news-content h3,
+.promotion-news-content h4,
+.promotion-news-content h5,
+.promotion-news-content h6 {
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .promotion-news-content h1,
+.promotion-news-content h2,
+.promotion-news-content h3,
+.promotion-news-content h4,
+.promotion-news-content h5,
+.promotion-news-content h6,
+{
+    opacity: 0;
+}
+.ie.wf-loading .promotion-news-content h1,
+.promotion-news-content h2,
+.promotion-news-content h3,
+.promotion-news-content h4,
+.promotion-news-content h5,
+.promotion-news-content h6,
+{
+    visibility: hidden;
+}
+.promotion-news-content .content,
+.promotion-news-content .content a {
+    font-family: Lato;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .promotion-news-content .content,
+.promotion-news-content .content a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .promotion-news-content .content,
+.promotion-news-content .content a,
+{
+    visibility: hidden;
+}
+.promotion-news-header .menu-default .menu-item a {
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+.wf-loading .promotion-news-header .menu-default .menu-item a,
+{
+    opacity: 0;
+}
+.ie.wf-loading .promotion-news-header .menu-default .menu-item a,
+{
+    visibility: hidden;
+}
+.promotion-news-wrapper {
+    background-color: #111;
+}
+.promotion-news-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.promotion-news .promotion-news-header header,
+.promotion-news .header-wrapper a {
+    color: #fff;
+}
+.promotion-news .decoration svg {
+    stroke: #55DAA5;
+}
+.promotion-news-content .content {
+    color: #fff;
+}
+.promotion-news .portfolio-arrow svg {
+    stroke: #fff;
+}
+.promotion-news-content-wrapper:before {
+    background-color: rgba(0, 0, 0, .5);
+}
+.promotion-news-content-wrapper:after {
+    background-color: rgba(85, 218, 165, .5);
+}
+.promotion-news .portfolio-arrow {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.promotion-single-post,
+.promotion-single-post .blog-footer {
+    background-color: #fff;
+}
+.promotion-single-post,
+.promotion-single-post .blog-footer .footer-content,
+.promotion-single-post .blog-footer .footer-content a,
+.promotion-single-post .content a {
+    color: #111;
+}
+.promotion-single-post .link-hover:before {
+    background: #55DAA5;
+}

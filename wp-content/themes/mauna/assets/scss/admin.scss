@@ -1,0 +1,45 @@
+.vc_color-picker {
+	.wp-picker-clear {
+		padding: 2px 4px;
+	}
+	.wp-picker-holder {
+		position: relative;
+
+	}
+	.wp-picker-holder .vc_alpha-container {
+		border-radius: 0;
+		border: 1px solid #dfdfdf;
+		padding: 6px;
+		background: #ffffff;
+		position: absolute;
+		width: 243px;
+		left: -1px;
+		z-index: 1000;
+		bottom: -64px;
+	}
+	.wp-picker-holder .vc_alpha-container label {
+		display: block;
+
+	}
+	.wp-picker-holder .vc_alpha-container label output {
+		padding-top: 0px;
+		display: inline;
+		vertical-align: top;
+	}
+	.wp-picker-holder .vc_alpha-container input {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	&.wp-picker-active {
+		.wp-picker-holder { margin-bottom: 42px; }
+	}
+}
+
+.redux-group-tab { 
+	.divide .inner { opacity: 0; }
+}
+
+.no-alpha { 
+	.vc_alpha-container { display: none; }
+}
